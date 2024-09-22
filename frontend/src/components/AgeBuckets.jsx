@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast, Bounce } from "react-toastify"; // Import Bounce here
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
@@ -73,7 +73,7 @@ const AgeBuckets = () => {
         transition={Bounce} // Ensure to use curly braces for Bounce
       />
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">
-        User Stats Grouped by Age Range
+        Age Range-Based Statistics
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12 w-full max-w-6xl px-4">
         <Bucket ageGroup="18-24" bucketData={bucket1} />
